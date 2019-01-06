@@ -1,0 +1,22 @@
+x = '*'
+n = int(input())
+if n%6 == 0:
+    y = ((((x*n)+'\n')*int(n/6))+((x*int(n/5))+'\n')*int(n/6)+(((x*n)+'\n')*int(n/6)))
+    z = ((((x*n)+'\n')*int(n/6))+(((x*int(n/5)).rjust(n)+'\n')*int(n/6))+(((x*n)+'\n')*int(n/6)))
+elif n%6 == 1:
+    y = ((((x*n)+'\n')*int(n/6))+((x*int(n/5))+'\n')*int(n/6)+(((x*n)+'\n')*int(n/6)))
+    z = ((((x*n)+'\n')*int(n/6+1))+(((x*int(n/5)).rjust(n)+'\n')*int(n/6))+(((x*n)+'\n')*int(n/6)))
+elif n%6 == 2:
+    y = ((((x*n)+'\n')*int(n/6+1))+((x*int(n/5))+'\n')*int(n/6)+(((x*n)+'\n')*int(n/6)))
+    z = ((((x*n)+'\n')*int(n/6))+(((x*int(n/5)).rjust(n)+'\n')*int(n/6))+(((x*n)+'\n')*int(n/6+1)))
+elif n%6 == 3:
+    y = ((((x*n)+'\n')*int(n/6+1))+((x*int(n/5))+'\n')*int(n/6)+(((x*n)+'\n')*int(n/+6)))
+    z = ((((x*n)+'\n')*int(n/6+1))+(((x*int(n/5)).rjust(n)+'\n')*int(n/6))+(((x*n)+'\n')*int(n/6+1)))
+elif n%6 == 4:
+    y = ((((x*n)+'\n')*int(n/6+1))+((x*int(n/5))+'\n')*int(n/6+1)+(((x*n)+'\n')*int(n/6)))
+    z = ((((x*n)+'\n')*int(n/6))+(((x*int(n/5)).rjust(n)+'\n')*int(n/6+1))+(((x*n)+'\n')*int(n/6+1)))
+elif n%6 == 5:
+    y = ((((x*n)+'\n')*int(n/6+1))+((x*int(n/5))+'\n')*int(n/6+1)+(((x*n)+'\n')*int(n/6+1)))
+    z = ((((x*n)+'\n')*int(n/6))+(((x*int(n/5)).rjust(n)+'\n')*int(n/6+1))+(((x*n)+'\n')*int(n/6+1)))
+    
+print(y+z)
